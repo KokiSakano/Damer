@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import Button from "./Button";
+import Button from './Button';
 
 export default {
-  title: "Components / Button",
-  component: "Button",
+  title: 'Components / Button',
+  component: 'Button',
 };
 
 export const Default = () => <Button>Click me</Button>;

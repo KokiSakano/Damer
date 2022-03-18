@@ -1,4 +1,4 @@
-import { PropsWithChildren } from "react";
+import { PropsWithChildren } from 'react';
 
 const Button = ({ children }: PropsWithChildren<{}>): JSX.Element => <button>{children}</button>;
 
