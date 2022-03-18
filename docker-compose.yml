@@ -8,3 +8,4 @@ services:
       - ./web-client:/var/www/html/web-client
     ports:
       - 3000:3000
+      - 6006:6006
