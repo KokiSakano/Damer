@@ -1,5 +1,5 @@
-import { PropsWithChildren } from "react";
+import { ReactNode } from 'react';
 
-const Button = ({ children }: PropsWithChildren<{}>): JSX.Element => <button>{children}</button>;
+const Button = ({ children }: { children: ReactNode }): JSX.Element => <button>{children}</button>;
 
 export default Button;

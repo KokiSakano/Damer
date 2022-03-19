@@ -1,10 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import Button from "./Button";
+import Button from './Button';
 
-export default {
-  title: "Components / Button",
-  component: "Button",
+
+const sbDefault = {
+  title: 'Components / Button',
+  component: 'Button',
 };
+export default sbDefault;
 
 export const Default = () => <Button>Click me</Button>;
