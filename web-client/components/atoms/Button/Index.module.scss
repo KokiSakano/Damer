@@ -9,34 +9,46 @@
 
 .primary {
   background-color: var(--color-primaryMain);
-}
-
-.primary:hover {
-  background-color: var(--color-primaryDark);
+  &:hover {
+    background-color: var(--color-primaryDark);
+  }
+  &:disabled {
+    background-color: var(--color-primaryMain);
+    opacity: 0.5;
+  }
 }
 
 .secondary {
   background-color: var(--color-secondaryMain);
-}
-
-.secondary:hover {
-  background-color: var(--color-secondaryDark);
+  &:hover {
+    background-color: var(--color-secondaryDark);
+  }
+  &:disabled {
+    background-color: var(--color-primaryMain);
+    opacity: 0.5;
+  }
 }
 
 .danger {
   background-color: var(--color-dangerMain);
-}
-
-.danger:hover {
-  background-color: var(--color-dangerDark);
+  &:hover {
+    background-color: var(--color-dangerDark);
+  }
+  &:disabled {
+    background-color: var(--color-primaryMain);
+    opacity: 0.5;
+  }
 }
 
 .warning {
   background-color: var(--color-warningMain);
-}
-
-.warning:hover {
-  background-color: var(--color-warningDark);
+  &:hover {
+    background-color: var(--color-warningDark);
+  }
+  &:disabled {
+    background-color: var(--color-primaryMain);
+    opacity: 0.5;
+  }
 }
 
 .large {
@@ -49,8 +61,4 @@
   font-size: 12px;
   padding: 4px 8px;
   border-radius: 8px;
-}
-
-.button:disabled {
-  opacity: 0.5;
 }
