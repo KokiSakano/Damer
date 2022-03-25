@@ -8,35 +8,35 @@
 }
 
 .primary {
-  background-color: #3a3;
+  background-color: var(--color-primaryMain);
 }
 
 .primary:hover {
-  background-color: #3c3;
+  background-color: var(--color-primaryDark);
 }
 
 .secondary {
-  background-color: #33a;
+  background-color: var(--color-secondaryMain);
 }
 
 .secondary:hover {
-  background-color: #33c;
+  background-color: var(--color-secondaryDark);
 }
 
 .danger {
-  background-color: #a33;
+  background-color: var(--color-dangerMain);
 }
 
 .danger:hover {
-  background-color: #c33;
+  background-color: var(--color-dangerDark);
 }
 
 .warning {
-  background-color: #aa3;
+  background-color: var(--color-warningMain);
 }
 
 .warning:hover {
-  background-color: #cc3;
+  background-color: var(--color-warningDark);
 }
 
 .large {
