@@ -1,12 +1,13 @@
 @charset "utf-8";
 
+// [参照]https://www.colordic.org/w
 :root {
-  --color-primaryMain: #3a3;
-  --color-primaryDark: #373;
-  --color-secondaryMain: #33a;
-  --color-secondaryDark: #337;
-  --color-dangerMain: #a33;
-  --color-dangerDark: #733;
-  --color-warningMain: #aa3;
-  --color-warningDark: #773;
+  --color-primaryMain: #007b43;
+  --color-primaryDark: #00552e;
+  --color-secondaryMain: #0095d9;
+  --color-secondaryDark: #007bbb;
+  --color-dangerMain: #e2041b;
+  --color-dangerDark: #c9171e;
+  --color-warningMain: #ffd900;
+  --color-warningDark: #fcc800;
 }
