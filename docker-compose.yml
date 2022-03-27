@@ -9,3 +9,44 @@ services:
     ports:
       - 3000:3000
       - 6006:6006
+
+  postgres:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: mebee
+      POSTGRES_PASSWORD: password
+      PGPASSWORD: password123
+      POSTGRES_DB: sample
+      PGDATA: /var/lib/postgresql/data/pgdata
+      TZ: "Asia/Tokyo"
+    ports:
+      - 5432:5432
+    volumes:
+      - ./docker/postgres/postgres:/var/lib/postgresql/data
+      - ./docker/postgres/logs:/var/log
+
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: always
+    ports:
+      - 81:80
+    environment:
+      PGADMIN_DEFAULT_EMAIL: info@mebbe.info
+      PGADMIN_DEFAULT_PASSWORD: password
+    volumes:
+      - ./docker/pgadmin/pgadmin:/var/lib/pgadmin
+    depends_on:
+      - postgres
+
+  server:
+    build: ./docker/server
+    tty: true
+    working_dir: /var
+    volumes:
+      - ./server:/var:cached
+    ports:
+      - 8080:8080
+    depends_on:
+      - postgres
+    command: ./mvnw spring-boot:run
