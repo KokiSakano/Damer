@@ -3,14 +3,13 @@ version: '3.8'
 services:
   web-client:
     build: ./docker/web-client
-    command: npm ci --unsafe-perm
     tty: true
     volumes:
-      - ./web-client:/var/www/html/web-client
-      - ./.git:/var/www/html/.git
+      - ./web-client:/web-client
     ports:
       - 3000:3000
       - 6006:6006
+    working_dir: /web-client
 
   postgres:
     image: postgres:latest
