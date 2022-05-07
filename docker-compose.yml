@@ -5,11 +5,11 @@ services:
     build: ./docker/web-client
     tty: true
     volumes:
-      - ./web-client:/web-client
+      - ./:/damer
     ports:
       - 3000:3000
       - 6006:6006
-    working_dir: /web-client
+    working_dir: /damer/web-client
 
   postgres:
     image: postgres:latest
