@@ -10,7 +10,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "next lint",
-    "format": "prettier --write './{components,pages}/**/*.{ts,tsx}'"
+    "format": "prettier --write './{components,pages}/**/*.{ts,tsx}'",
+    "postinstall": "cd .. && husky install web-client/.husky"
   },
   "keywords": [],
   "author": "",
@@ -41,6 +42,8 @@
     "eslint-config-next": "12.1.0",
     "eslint-config-prettier": "^8.5.0",
     "html-webpack-plugin": "^5.5.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
     "prettier": "^2.6.0",
     "sass": "^1.49.9",
     "sass-loader": "^12.6.0",

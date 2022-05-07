@@ -1,0 +1,5 @@
+#!/bin/sh
+exec < /dev/tty
+. "$(dirname "$0")/_/husky.sh"
+
+docker-compose exec web-client npx lint-staged

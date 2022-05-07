@@ -3,6 +3,7 @@ install:
 
 up:
 	docker-compose up -d
+	docker-compose exec web-client npm ci
 
 next:
 	docker-compose exec web-client npm run dev
