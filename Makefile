@@ -3,10 +3,10 @@ install:
 
 up:
 	docker-compose up -d
-	docker-compose exec web-client yarn install
+	docker-compose exec web-client npm ci
 
 next:
-	docker-compose exec web-client yarn run dev
+	docker-compose exec web-client npm run dev
 
 next-sb:
-	docker-compose exec web-client yarn run storybook
+	docker-compose exec web-client npm run storybook
