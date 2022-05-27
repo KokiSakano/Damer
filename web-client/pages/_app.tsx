@@ -1,6 +1,7 @@
 import { ChakraProvider } from '@chakra-ui/react';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
+import { Layout } from '../components/Layout';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
@@ -9,7 +10,9 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         <title>Damer</title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width, shrink-to-fit=no' />
       </Head>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </ChakraProvider>
   );
 };
