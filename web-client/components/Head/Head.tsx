@@ -16,14 +16,7 @@ export const Head = (): JSX.Element => {
     <Box as='header' bg='blackAlpha.800' p='10px'>
       <Flex align='center' justifyContent='space-between'>
         <Flex align='center' pr='10px'>
-          <IconButton
-            _focus={{ boxShadow: 'none' }}
-            aria-label='ガイド'
-            icon={<HamburgerIcon />}
-            variant='ghost'
-            color='whiteAlpha.900'
-            colorScheme='white'
-          />
+          å
           <Text color='whiteAlpha.900' fontSize='2xl' fontWeight='bold'>
             Damer
           </Text>
