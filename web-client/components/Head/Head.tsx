@@ -15,8 +15,9 @@ import {
   MenuList,
   Text,
 } from '@chakra-ui/react';
+import { FC } from 'react';
 
-export const Head = (): JSX.Element => {
+export const Head: FC = () => {
   return (
     <Box as='header' bg='blackAlpha.800' p='10px'>
       <Flex align='center' justifyContent='space-between'>
