@@ -1,4 +1,4 @@
-import { HamburgerIcon, SearchIcon } from '@chakra-ui/icons';
+import { SearchIcon } from '@chakra-ui/icons';
 import {
   Avatar,
   Box,
@@ -8,6 +8,11 @@ import {
   Input,
   InputGroup,
   InputRightElement,
+  Menu,
+  MenuButton,
+  MenuGroup,
+  MenuItem,
+  MenuList,
   Text,
 } from '@chakra-ui/react';
 
@@ -42,7 +47,14 @@ export const Head = (): JSX.Element => {
             </InputRightElement>
           </InputGroup>
         </FormControl>
-        <Avatar />
+        <Menu>
+          <MenuButton as={Avatar} />
+          <MenuList>
+            <MenuGroup title='プロフィール'>
+              <MenuItem>アカウント</MenuItem>
+            </MenuGroup>
+          </MenuList>
+        </Menu>
       </Flex>
     </Box>
   );
