@@ -1,10 +1,10 @@
 import { FC, ReactNode } from 'react';
-import { Head } from '../Head';
+import { Header } from '../Header';
 
 export const Layout: FC<{ children: ReactNode }> = ({ children }) => {
   return (
     <>
-      <Head />
+      <Header />
       <main>{children}</main>
     </>
   );
