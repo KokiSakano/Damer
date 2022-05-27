@@ -22,7 +22,6 @@ export const Header: FC = () => {
     <Box as='header' bg='blackAlpha.800' p='10px'>
       <Flex align='center' justifyContent='space-between'>
         <Flex align='center' pr='10px'>
-          å
           <Text color='whiteAlpha.900' fontSize='2xl' fontWeight='bold'>
             Damer
           </Text>
